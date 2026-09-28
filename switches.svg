@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800">
+    <defs><linearGradient id="g" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#07111f"/><stop offset="1" stop-color="#1479ff"/></linearGradient></defs>
+    <rect width="1200" height="800" fill="url(#g)"/>
+    <circle cx="960" cy="150" r="210" fill="#ffffff" opacity=".08"/><circle cx="180" cy="680" r="260" fill="#ffffff" opacity=".06"/>
+    <text x="80" y="350" fill="white" font-family="Arial" font-size="70" font-weight="700">SWITCHES</text>
+    <text x="82" y="420" fill="#b9c8da" font-family="Arial" font-size="30">Everyday electrical essentials</text>
+    </svg>

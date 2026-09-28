@@ -3,115 +3,130 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Rakesh Electricals - Electrical products, lighting and electrical solutions in Moradabad.">
-<title>Rakesh Electricals | Electrical Solutions in Moradabad</title>
+<meta name="description" content="Rakesh Electricals — electrical products and everyday electrical solutions in Bangla Gaon, Moradabad.">
+<title>Rakesh Electricals | Powering Homes & Businesses</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
 <style>
-:root{
-  --navy:#07111f; --blue:#1479ff; --cyan:#21d4fd; --gold:#ffbf47;
-  --white:#f7fbff; --muted:#aebbd0; --card:rgba(255,255,255,.07);
-  --line:rgba(255,255,255,.12);
-}
+:root{--ink:#0b1220;--muted:#667085;--blue:#1261ff;--cyan:#19b5fe;--lime:#c9f23a;--paper:#f7f9fc;--white:#fff;--line:#e7ebf2;--shadow:0 24px 70px rgba(10,28,58,.12)}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:Inter,Segoe UI,Arial,sans-serif;background:var(--navy);color:var(--white);line-height:1.6}
+body{font-family:"DM Sans",sans-serif;color:var(--ink);background:var(--paper);line-height:1.6}
 a{text-decoration:none;color:inherit}
-.container{width:min(1120px,92%);margin:auto}
-nav{position:fixed;top:0;left:0;right:0;z-index:20;background:rgba(7,17,31,.78);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
-.navin{height:72px;display:flex;align-items:center;justify-content:space-between}
-.logo{font-weight:900;font-size:20px;letter-spacing:.3px}.logo span{color:var(--cyan)}
-.links{display:flex;gap:24px;color:#dce8f7;font-size:14px}.links a:hover{color:var(--cyan)}
-.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 19px;border-radius:12px;font-weight:800;background:linear-gradient(135deg,var(--blue),var(--cyan));color:#00101c;box-shadow:0 10px 30px rgba(20,121,255,.25)}
-.btn.alt{background:transparent;color:white;border:1px solid var(--line);box-shadow:none}
-.hero{padding:145px 0 85px;position:relative;overflow:hidden;background:
-radial-gradient(circle at 85% 25%,rgba(33,212,253,.18),transparent 30%),
-radial-gradient(circle at 15% 60%,rgba(20,121,255,.16),transparent 28%)}
-.heroGrid{display:grid;grid-template-columns:1.08fr .92fr;gap:48px;align-items:center}
-.badge{display:inline-block;border:1px solid rgba(33,212,253,.3);background:rgba(33,212,253,.08);padding:7px 12px;border-radius:999px;color:#8eeaff;font-size:13px;font-weight:800;margin-bottom:18px}
-h1{font-size:clamp(42px,6vw,72px);line-height:1.02;letter-spacing:-2.5px;margin-bottom:20px}
-h1 span{background:linear-gradient(90deg,#fff,var(--cyan));-webkit-background-clip:text;background-clip:text;color:transparent}
-.hero p{color:var(--muted);font-size:18px;max-width:610px;margin-bottom:28px}
+.container{width:min(1160px,92%);margin:auto}
+nav{position:fixed;top:0;left:0;right:0;z-index:20;background:rgba(247,249,252,.86);backdrop-filter:blur(16px);border-bottom:1px solid rgba(231,235,242,.8)}
+.navin{height:76px;display:flex;align-items:center;justify-content:space-between}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:-.5px}
+.logo-mark{width:38px;height:38px;border-radius:12px;background:var(--ink);display:grid;place-items:center;color:var(--lime);font-size:21px;box-shadow:0 8px 20px rgba(11,18,32,.2)}
+.navlinks{display:flex;gap:28px;font-size:14px;font-weight:600;color:#475467}
+.navlinks a:hover{color:var(--blue)}
+.navbtn{background:var(--ink);color:white;padding:12px 18px;border-radius:999px;font-weight:700;font-size:14px}
+.hero{padding:150px 0 78px;overflow:hidden;background:radial-gradient(circle at 85% 10%,rgba(25,181,254,.16),transparent 28%),radial-gradient(circle at 10% 20%,rgba(201,242,58,.18),transparent 24%),var(--paper)}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:54px;align-items:center}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);background:#fff;border-radius:999px;padding:7px 12px;font-size:12px;font-weight:700;color:#475467;margin-bottom:22px}
+.dot{width:7px;height:7px;border-radius:50%;background:#21c77a}
+h1,h2,h3{font-family:Manrope,sans-serif;letter-spacing:-1.5px}
+h1{font-size:clamp(44px,6vw,76px);line-height:1.02;max-width:700px}
+.gradient{background:linear-gradient(100deg,var(--blue),#00a8d8 55%,#4a39ff);-webkit-background-clip:text;color:transparent}
+.hero p{font-size:18px;color:var(--muted);max-width:590px;margin:22px 0 30px}
 .actions{display:flex;gap:12px;flex-wrap:wrap}
-.heroCard{min-height:390px;border:1px solid var(--line);border-radius:28px;position:relative;overflow:hidden;background:linear-gradient(145deg,#10253c,#08121f);box-shadow:0 30px 80px rgba(0,0,0,.35)}
-.heroCard img{width:100%;height:100%;object-fit:cover;opacity:.72}
-.heroOverlay{position:absolute;inset:0;background:linear-gradient(180deg,transparent 30%,rgba(7,17,31,.95))}
-.heroInfo{position:absolute;left:25px;right:25px;bottom:24px}
-.heroInfo strong{font-size:25px}.heroInfo small{display:block;color:var(--muted)}
-section{padding:85px 0}
-.sectionHead{text-align:center;margin-bottom:42px}.sectionHead h2{font-size:38px;margin-bottom:10px}.sectionHead p{color:var(--muted)}
-.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.card{padding:27px;border:1px solid var(--line);background:var(--card);border-radius:20px;transition:.25s}
-.card:hover{transform:translateY(-5px);border-color:rgba(33,212,253,.35)}
-.icon{font-size:32px;margin-bottom:13px}.card h3{margin-bottom:8px}.card p{color:var(--muted);font-size:14px}
-.products{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.product{overflow:hidden;border:1px solid var(--line);border-radius:20px;background:#0b1828}
-.product img{width:100%;height:190px;object-fit:cover}.product div{padding:19px}.product p{color:var(--muted);font-size:14px}
-.about{display:grid;grid-template-columns:.9fr 1.1fr;gap:45px;align-items:center}
-.about img{width:100%;height:390px;object-fit:cover;border-radius:25px;border:1px solid var(--line)}
-.about p{color:var(--muted);margin:15px 0}
-.points{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:22px 0}.point{padding:13px;border:1px solid var(--line);border-radius:13px;background:rgba(255,255,255,.04)}
-.contact{background:linear-gradient(135deg,#0c2742,#07111f)}
-.contactGrid{display:grid;grid-template-columns:1fr 1fr;gap:22px}.contactCard{padding:30px;border-radius:22px;border:1px solid var(--line);background:var(--card)}
-.contactCard p{color:var(--muted);margin:8px 0 18px}.big{font-size:21px;font-weight:800}
-footer{padding:30px 0;color:#8797ad;border-top:1px solid var(--line);font-size:13px}
-@media(max-width:800px){.links{display:none}.heroGrid,.about,.contactGrid{grid-template-columns:1fr}.grid3,.products{grid-template-columns:1fr}.hero{padding-top:120px}.heroCard{min-height:300px}h1{letter-spacing:-1.5px}.points{grid-template-columns:1fr}}
+.btn{padding:14px 20px;border-radius:13px;font-weight:700;display:inline-flex;align-items:center;gap:9px}
+.primary{background:var(--blue);color:#fff;box-shadow:0 12px 25px rgba(18,97,255,.25)}
+.secondary{background:#fff;border:1px solid var(--line)}
+.hero-card{position:relative;min-height:500px;border-radius:32px;overflow:hidden;box-shadow:var(--shadow);background:#101a2c}
+.hero-card img{width:100%;height:100%;min-height:500px;object-fit:cover;opacity:.82}
+.hero-card:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 30%,rgba(7,14,27,.86))}
+.card-copy{position:absolute;z-index:2;bottom:28px;left:28px;right:28px;color:white}
+.card-copy small{color:#c9f23a;font-weight:800;text-transform:uppercase;letter-spacing:2px}
+.card-copy h3{font-size:28px;margin:7px 0}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:30px}
+.stat{background:#fff;border:1px solid var(--line);padding:18px;border-radius:16px}
+.stat b{font-size:22px;font-family:Manrope}.stat span{display:block;color:var(--muted);font-size:12px;margin-top:3px}
+section{padding:90px 0}
+.section-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:38px}
+.kicker{color:var(--blue);font-weight:800;font-size:12px;text-transform:uppercase;letter-spacing:2px}
+h2{font-size:clamp(34px,4vw,52px);line-height:1.08;margin-top:8px}
+.section-head p{max-width:440px;color:var(--muted)}
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.service{background:#fff;border:1px solid var(--line);border-radius:24px;padding:28px;transition:.25s;position:relative;overflow:hidden}
+.service:hover{transform:translateY(-5px);box-shadow:0 18px 45px rgba(10,28,58,.09)}
+.icon{width:50px;height:50px;border-radius:15px;background:#edf4ff;color:var(--blue);display:grid;place-items:center;font-size:23px;margin-bottom:22px}
+.service h3{font-size:23px;margin-bottom:8px}.service p{color:var(--muted);font-size:14px}
+.service .num{position:absolute;right:20px;top:18px;color:#d6dbe4;font-weight:800}
+.dark{background:var(--ink);color:#fff}.dark .kicker{color:var(--lime)}.dark .section-head p{color:#aab4c5}
+.feature{display:grid;grid-template-columns:.9fr 1.1fr;gap:60px;align-items:center}
+.feature-img{border-radius:28px;overflow:hidden;min-height:430px}.feature-img img{width:100%;height:100%;object-fit:cover}
+.points{display:grid;gap:20px;margin-top:28px}
+.point{display:flex;gap:14px}.check{width:28px;height:28px;border-radius:50%;background:rgba(201,242,58,.15);color:var(--lime);display:grid;place-items:center;flex:none}.point b{display:block}.point span{color:#aab4c5;font-size:14px}
+.brands{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}.brand{border:1px solid #26334a;border-radius:999px;padding:10px 15px;color:#d5dbea;font-weight:700;font-size:13px}
+.gallery{display:grid;grid-template-columns:1.3fr .7fr .7fr;grid-template-rows:240px 240px;gap:14px}.gallery img{width:100%;height:100%;object-fit:cover;border-radius:22px}.gallery .big{grid-row:span 2}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:18px}.contact-card{background:#fff;border:1px solid var(--line);border-radius:25px;padding:32px}.contact-card h3{font-size:25px;margin-bottom:12px}.contact-card p{color:var(--muted);font-size:14px}.detail{padding:16px 0;border-bottom:1px solid var(--line)}.detail:last-child{border-bottom:0}.detail small{display:block;color:#98a2b3;text-transform:uppercase;font-size:10px;font-weight:800;letter-spacing:1.5px}.detail b{font-size:16px}
+footer{background:#080e18;color:#b8c0ce;padding:34px 0}.foot{display:flex;justify-content:space-between;gap:20px;font-size:13px}.foot b{color:#fff}
+.floating{position:fixed;right:18px;bottom:18px;z-index:30;background:#20bd67;color:#fff;padding:14px 17px;border-radius:999px;font-weight:800;box-shadow:0 15px 30px rgba(0,0,0,.18)}
+@media(max-width:850px){.navlinks{display:none}.hero-grid,.feature,.contact{grid-template-columns:1fr}.hero-card{min-height:390px}.hero-card img{min-height:390px}.services{grid-template-columns:1fr 1fr}.gallery{grid-template-columns:1fr 1fr;grid-template-rows:220px 220px 220px}.gallery .big{grid-row:span 1}.section-head{display:block}.section-head p{margin-top:15px}}
+@media(max-width:560px){section{padding:65px 0}.services{grid-template-columns:1fr}.stats{grid-template-columns:1fr}.hero{padding-top:120px}.hero-card{min-height:340px}.hero-card img{min-height:340px}.foot{display:block}.foot div+div{margin-top:10px}}
 </style>
 </head>
 <body>
 <nav><div class="container navin">
-  <a class="logo" href="#home">RAKESH <span>ELECTRICALS</span></a>
-  <div class="links"><a href="#services">Services</a><a href="#products">Products</a><a href="#about">About</a><a href="#contact">Contact</a></div>
-  <a class="btn" href="#contact">Get in Touch</a>
+<a class="logo" href="#"><span class="logo-mark">⚡</span><span>RAKESH<br><small style="font-size:9px;letter-spacing:2px;color:#667085">ELECTRICALS</small></span></a>
+<div class="navlinks"><a href="#services">Products</a><a href="#about">About</a><a href="#showcase">Showcase</a><a href="#contact">Contact</a></div>
+<a class="navbtn" href="tel:+918899773332">Call Us</a>
 </div></nav>
 
-<header class="hero" id="home"><div class="container heroGrid">
-  <div>
-    <div class="badge">⚡ ELECTRICAL SOLUTIONS • MORADABAD</div>
-    <h1>Power your space with <span>confidence.</span></h1>
-    <p>A modern business website concept for Rakesh Electricals — showcasing electrical products, lighting and dependable solutions for homes and businesses.</p>
-    <div class="actions"><a class="btn" href="#products">Explore Products</a><a class="btn alt" href="#contact">Contact Store</a></div>
-  </div>
-  <div class="heroCard">
-    <img src="assets/electrical-hero.svg" alt="Electrical lighting and equipment">
-    <div class="heroOverlay"></div><div class="heroInfo"><strong>Rakesh Electricals</strong><small>Bangla Gaon, Darzian, Moradabad, Uttar Pradesh</small></div>
-  </div>
+<header class="hero"><div class="container hero-grid">
+<div>
+<div class="eyebrow"><span class="dot"></span> Local electrical store · Moradabad</div>
+<h1>Powering everyday life with <span class="gradient">the right connection.</span></h1>
+<p>A modern digital home for Rakesh Electricals — your local destination for electrical products and practical solutions in Bangla Gaon, Moradabad.</p>
+<div class="actions"><a class="btn primary" href="#contact">Visit the Store →</a><a class="btn secondary" href="tel:+918899773332">☎ Call Rakesh Electricals</a></div>
+<div class="stats"><div class="stat"><b>5.0★</b><span>Google listing rating</span></div><div class="stat"><b>9 AM–9 PM</b><span>Listed daily hours</span></div><div class="stat"><b>19+ yrs</b><span>Listed business experience</span></div></div>
+</div>
+<div class="hero-card"><img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1100&q=85" alt="Electrical work and tools"><div class="card-copy"><small>Rakesh Electricals</small><h3>Reliable products. Local service.</h3><p style="color:#d8dfeb">Bangla Gaon · Nagfani Road · Moradabad</p></div></div>
 </div></header>
 
 <section id="services"><div class="container">
-  <div class="sectionHead"><h2>What we can help with</h2><p>Clear sections that make it easy for customers to understand the business.</p></div>
-  <div class="grid3">
-    <div class="card"><div class="icon">💡</div><h3>Lighting Solutions</h3><p>Modern lighting options for homes, shops, offices and other spaces.</p></div>
-    <div class="card"><div class="icon">⚡</div><h3>Electrical Products</h3><p>A showcase for switches, wires, accessories and other electrical essentials.</p></div>
-    <div class="card"><div class="icon">🛠️</div><h3>Electrical Support</h3><p>Add the store's actual installation, repair or consultation services here.</p></div>
-  </div>
+<div class="section-head"><div><div class="kicker">What we offer</div><h2>Electrical essentials,<br>made simple.</h2></div><p>Explore the kinds of categories an electrical store like Rakesh Electricals can showcase online. Product availability and pricing should be confirmed with the store.</p></div>
+<div class="services">
+<div class="service"><span class="num">01</span><div class="icon">💡</div><h3>Lighting</h3><p>LED lighting, bulbs, fixtures and everyday illumination solutions for homes and shops.</p></div>
+<div class="service"><span class="num">02</span><div class="icon">🔌</div><h3>Wires & Cables</h3><p>Electrical wires, cables and connection essentials for new work and replacements.</p></div>
+<div class="service"><span class="num">03</span><div class="icon">⚡</div><h3>Switches & Sockets</h3><p>Practical switching and power-access products for residential and commercial spaces.</p></div>
+<div class="service"><span class="num">04</span><div class="icon">🌀</div><h3>Fans & Accessories</h3><p>Everyday electrical accessories and fan-related products for comfortable spaces.</p></div>
+<div class="service"><span class="num">05</span><div class="icon">🔋</div><h3>Power Solutions</h3><p>Explore batteries, inverter-related products and other backup-power essentials.</p></div>
+<div class="service"><span class="num">06</span><div class="icon">🧰</div><h3>Electrical Supplies</h3><p>Useful fittings, accessories and supplies for household electrical requirements.</p></div>
+</div></div></section>
+
+<section class="dark" id="about"><div class="container feature">
+<div class="feature-img"><img src="https://images.unsplash.com/photo-1555963966-b7ae5406b6ed?auto=format&fit=crop&w=1000&q=85" alt="Electrical components and tools"></div>
+<div><div class="kicker">Why a website matters</div><h2>Turn a local shop into a destination people can find.</h2><div class="points">
+<div class="point"><div class="check">✓</div><div><b>Easy to discover</b><span>Give customers one clean place to see what the store is about and where to find it.</span></div></div>
+<div class="point"><div class="check">✓</div><div><b>Built for calls</b><span>Prominent call and directions actions make mobile visitors more likely to take the next step.</span></div></div>
+<div class="point"><div class="check">✓</div><div><b>Ready for a catalogue</b><span>Add verified products, brands, prices and offers later without redesigning the whole site.</span></div></div>
+</div><div class="brands"><span class="brand">Wires</span><span class="brand">Lighting</span><span class="brand">Switchgear</span><span class="brand">Fans</span><span class="brand">Power</span></div></div>
 </div></section>
 
-<section id="products"><div class="container">
-  <div class="sectionHead"><h2>Featured Categories</h2><p>Replace these cards with the exact products and brands the shop sells.</p></div>
-  <div class="products">
-    <article class="product"><img src="assets/lighting.svg" alt="Lighting"><div><h3>Lighting & Bulbs</h3><p>LED lighting, decorative lights and everyday illumination.</p></div></article>
-    <article class="product"><img src="assets/switches.svg" alt="Electrical switches"><div><h3>Switches & Accessories</h3><p>Switches, sockets and electrical accessories for different needs.</p></div></article>
-    <article class="product"><img src="assets/wires.svg" alt="Electrical wires"><div><h3>Wires & Cables</h3><p>Electrical wiring products and cable solutions.</p></div></article>
-  </div>
-</div></section>
+<section id="showcase"><div class="container">
+<div class="section-head"><div><div class="kicker">Store showcase</div><h2>A visual identity<br>built to feel trusted.</h2></div><p>Replace these concept images with real shop, product and team photos before presenting the final version to the business.</p></div>
+<div class="gallery">
+<img class="big" src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?auto=format&fit=crop&w=1000&q=85" alt="Electrical installation">
+<img src="https://images.unsplash.com/photo-1565608087341-404b25492fee?auto=format&fit=crop&w=800&q=85" alt="Electrical components">
+<img src="https://images.unsplash.com/photo-1621993202323-f9a1bba2f1d2?auto=format&fit=crop&w=800&q=85" alt="Electrical tools">
+<img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=800&q=85" alt="Electrical professional">
+<img src="https://images.unsplash.com/photo-1558008258-3256797b43f3?auto=format&fit=crop&w=800&q=85" alt="Lighting">
+</div></div></section>
 
-<section id="about"><div class="container about">
-  <img src="assets/store.svg" alt="Electrical store">
-  <div><div class="badge">LOCAL • TRUSTED • CONVENIENT</div><h2>Built for local customers.</h2>
-    <p>This demo is designed to turn a Google Maps listing into a professional online presence. It gives customers a quick way to understand the shop, browse categories and contact the business.</p>
-    <div class="points"><div class="point">✓ Mobile-friendly design</div><div class="point">✓ Fast single-page layout</div><div class="point">✓ Easy contact CTA</div><div class="point">✓ Product showcase</div></div>
-    <a class="btn" href="#contact">Ask About Products</a>
-  </div>
-</div></section>
+<section id="contact"><div class="container">
+<div class="section-head"><div><div class="kicker">Visit Rakesh Electricals</div><h2>Need something electrical?</h2></div><p>Call ahead for product availability, pricing or directions — then visit the store in Bangla Gaon.</p></div>
+<div class="contact">
+<div class="contact-card"><h3>Store details</h3>
+<div class="detail"><small>Address</small><b>Bangla Gaon, Darzian, Moradabad, Uttar Pradesh 244001</b></div>
+<div class="detail"><small>Phone</small><b><a href="tel:+918899773332">+91 88997 73332</a></b></div>
+<div class="detail"><small>Hours</small><b>Every day · 9:00 AM – 9:00 PM</b></div>
+</div>
+<div class="contact-card" style="background:linear-gradient(145deg,#0b1220,#17233a);color:#fff"><h3>Come by the store.</h3><p style="color:#aab4c5;margin-bottom:22px">Located in Bangla Gaon near the Water Tank area on Nagfani Road. Check the map before travelling.</p><div class="actions"><a class="btn primary" href="https://maps.google.com/?q=Rakesh+Electricals,+Bangla+Gaon,+Moradabad" target="_blank">Open Google Maps ↗</a><a class="btn" style="background:#fff" href="tel:+918899773332">Call now</a></div></div>
+</div></div></section>
 
-<section class="contact" id="contact"><div class="container">
-  <div class="sectionHead"><h2>Visit or contact us</h2><p>Update the phone number, WhatsApp and opening hours with the business's verified details before delivery.</p></div>
-  <div class="contactGrid">
-    <div class="contactCard"><div class="big">📍 Rakesh Electricals</div><p>Bangla Gaon, Darzian, Moradabad, Uttar Pradesh 244001</p><a class="btn" target="_blank" href="https://maps.app.goo.gl/hchxv2o52DisJNFB6">Open in Google Maps</a></div>
-    <div class="contactCard"><div class="big">📞 Ready to connect?</div><p>Call or WhatsApp us at <strong>088997 73332</strong>.</p><div class="actions"><a class="btn" href="tel:+918899773332">Call Now</a><a class="btn alt" target="_blank" href="https://wa.me/918899773332">WhatsApp</a></div></div>
-  </div>
-</div></section>
-
-<footer><div class="container">© <span id="year"></span> Rakesh Electricals. Website concept prepared for business presentation.</div></footer>
-<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
-</body>
-</html>
+<footer><div class="container foot"><div><b>⚡ Rakesh Electricals</b> · Moradabad</div><div>Demo website concept · Verify all business information before publishing.</div></div></footer>
+<a class="floating" href="https://wa.me/918899773332?text=Hello%20Rakesh%20Electricals" target="_blank">WhatsApp ↗</a>
+</body></html>
